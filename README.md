@@ -8,7 +8,7 @@ Infer is a declarative domain-specific language (DSL) and an Inference-Driven-De
 
 ## Features
 
-- **Inference Testing**: Use an LLM (large language model) to assess your code through inferences.
+- **Inference Testing**: Use a LLM (large language model) to assess your code through inferences.
 - **Inference-Driven Development (IDD)**: Inspired by behavior-driven development (BDD), write your tests in plain natural language. Unlike BDD, don't worry about implementation: all Infer tests are self-contained inference assertions, requiring no code to implement.
 - **Language Agnostic**: Infer can be applied to any codebase, regardless of language.
 - **HCL Syntax**: Define your tests with the expressive and well-structured HashiCorp Configuration Language.
