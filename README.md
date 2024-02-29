@@ -33,12 +33,14 @@ while True:
 ```
 
 Similarly, you would use the native comment format of whatever language you are working in. For example, in JavaScript, you would use the following:
+
 ```javascript
 // Infer: Suspiciously loopy code
 while (true) {
   console.log("This loop will run forever.");
 }
 // EndInfer: Suspiciously loopy code
+```
 
 In any programming language, we can use comments to tag code snippets with `Infer` and `EndInfer` to indicate that we want to assert inferences about the code inside the tagged section.
 
