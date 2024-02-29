@@ -59,10 +59,10 @@ file "example.py" {
     }
 
     infer {
-      assert    = "it should not introduce any security vulnerabilities"
-      model     = "gpt4-turbo"
-      count     = 1            # Default
-      threshold = 1            # Default
+      assert     = "it should not introduce any security vulnerabilities"
+      model      = "gpt4-turbo"
+      count      = 1            # Default
+      threshold  = 1.0          # Default
     }
   }
 }
