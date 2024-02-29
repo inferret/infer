@@ -2,7 +2,7 @@
 
 ## Overview
 
-Infer is an Inference-Driven-Development (IDD) test suite for any codebase. Infer allows developers to assert inferences about their code using HCL syntax. See below for examples.
+Infer is a declarative domain-specific language (DSL) and an Inference-Driven-Development (IDD) test suite for any codebase. Infer allows developers to assert inferences about their code using HCL syntax. See below for examples.
 
 **Note**: Infer is **experimental** pre-release software, and as such all interfaces are unstable and subject to change. Please **exercise caution!**
 
