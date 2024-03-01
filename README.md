@@ -84,31 +84,19 @@ go build ./cmd/infer/infer.go -o infer
 ### Command-Line Interface
 
 ```plaintext
-infer [options] [Inferfile]
-```
-
-#### Options
-
-Here are some optional arguments used in the command line:
-
-- `--openai-api-key`: Specify your OpenAI API key. Default: `$OPENAI_API_KEY`.
-- `--openai-api-url`: Specify the OpenAI API URL. Default: `$OPENAI_API_URL` or `https://www.openai.com/v1`.
-- `-c, --count N`: Specify the number of inference iterations (default: 1), where 'N' \(mandatory\) is an integer.
-- `-t, --threshold T`: Set the success rate threshold (default: 100%), where 'T' is a percentage between 0 and 100%.
-- `-p N, --parallel N`: Enable parallel test execution of 'N' number of tests. 'N' (mandatory) is an integer. Default: 1
-- `-v, --verbose`: Enables verbose output.
-- `--help`: Outputs this help dialogue.
-
-We have the following mandatory commands:
-
-- `validate`: Use this command to check the syntax of the HCL code.
-   Format: `validate [Inferfile]` where 'Inferfile' is the name of the file you wish to validate. If no Inferfile is given, 'Inferfile' is assumed. If it defines additional file paths, they will also be checked.
-- `infer`: This command runs inference tests.
-   Format: `infer [options]` where 'options' are any arguments you wish to pass. If no Inferfile is given, 'Inferfile' is assumed. If it defines additional file paths, any additional Inferfiles will also be included. 
-
-For OpenAI API specific configurations:
-
-
+Usage of ./infer:
+Commands:
+  validate: Validate the syntax of the Inferfile.
+  infer: Run inference tests (default).
+Options:
+  -f Path to the Inferfile (Default: Inferfile)
+  -help Show help information (Default: false)
+  -openai-api-key string
+        OpenAI API key (Default: environment variable $OPENAI_API_KEY)
+  -openai-api-url OpenAI API URL (Default: https://api.openai.com/v1)
+  -parallel-threads Number of parallel threads to run (Default: 1)
+  -v Enable verbose output (Default: false)
+  ```
 
 ### Inferfile Configuration
 
