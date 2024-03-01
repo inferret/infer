@@ -46,7 +46,7 @@ In any programming language, we can use comments to tag code snippets with `Infe
 
 ### Inferfile Syntax
 
-In the `Inferfile`, you can define inference assertions related to this code section:
+In the `Inferfile`, using an [HCL](https://github.com/hashicorp/hcl) syntax, you can define inference assertions related to this code section:
 
 ```hcl
 file "example.py" {
@@ -97,10 +97,6 @@ Options:
   -parallel-threads Number of parallel threads to run (Default: 1)
   -v Enable verbose output (Default: false)
   ```
-
-### Inferfile Configuration
-
-Use HCL to define inference tests in an Inferfile, specifying the expected behaviors and conditions for your codebase.
 
 ## Build Instructions
 
