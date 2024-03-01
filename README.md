@@ -106,7 +106,7 @@ Ensure you have Go installed and follow these steps to build Infer from source:
 git clone https://github.com/yourusername/infer.git
 cd infer
 go build -o infer cmd/infer/main.go
-./infer --help
+./infer -help
 ```
 
 ## Unit Testing
